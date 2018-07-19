@@ -13,9 +13,9 @@ class ConfigProvider
             'dependencies' => $this->getDependencies(),
             'templates'    => $this->getTemplates(),
             'predispatch-pipe' => [
-                FTC\WebAdmin\Handler\MembersManagement::class => [
-                    FTC\Trello\Middleware\CheckMemberCard::class,
-                    FTC\Trello\Middleware\CreateMemberCard::class,
+                \FTC\WebAdmin\Handler\MembersManagement::class => [
+                    \FTC\Trello\Middleware\CheckMemberCard::class,
+                    \FTC\Trello\Middleware\CreateMemberCard::class,
                 ],
             ],
         ];
